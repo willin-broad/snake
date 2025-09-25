@@ -64,7 +64,7 @@ impl Snake {
     }
     pub fn head_position(&self) ->(i32, i32) {
         let head = self.body.front().unwrap();
-        (head_block.x, head_block.y)
+        (head.x, head.y)
     }
     pub fn move_forward(&mut self, dir: Option<Direction>) {
         match dir {

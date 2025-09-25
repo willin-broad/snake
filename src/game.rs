@@ -54,7 +54,7 @@ impl Game {
             Key::Right => Some(Direction::Right),
             _ => None,
         };
-        if dir.unwrap() = self.snake.head_direction().opposite() {
+        if dir.unwrap() == self.snake.head_direction().opposite() {
             return;
         }
 
