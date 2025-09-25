@@ -7,7 +7,7 @@ pub fn  to_coord(game_coord: i32)->f64 {
     (game_coord as f64)* BLOCK_SIZE
 }
 
-pub fn  to_coord(game_coord: i32)->u32 {
+pub fn  to_coord_u32(game_coord: i32)->u32 {
     to_coord(game_coord) as u32
 }
 
@@ -38,8 +38,8 @@ pub fn draw_rectangle(
         [
             x,
             y,
-            BLOCK_SIZE =(width as f64),
-            BLOCK_SIZE =(height as f64),
+            BLOCK_SIZE *(width as f64),
+            BLOCK_SIZE *(height as f64),
         ],
         con.transform,
         g,

@@ -9,7 +9,7 @@ use piston_window::*;
 use piston_window::types::Color;
 
 use game::Game;
-use draw::to_coord_u32;
+use crate::draw::to_coord as to_coord_u32;
 
 const BACK_COLOR: Color = [0.50, 0.50, 0.50, 1.0]; // Grey
 

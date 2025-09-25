@@ -3,8 +3,8 @@ use piston_window::types::Color;
 
 use rand::{thread_rng, Rng};
 
-use snake::{Direction, Snake};
-use draw::{draw_rectangle, draw_block};
+use crate::snake::{Direction, Snake};
+use crate::draw::{draw_rectangle, draw_block};
 
 const FOOD_COLOR: Color = [0.80, 0.00, 0.00, 1.0]; // Red
 const BORDER_COLOR: Color = [0.00, 0.00, 0.00, 1.0]; // Black

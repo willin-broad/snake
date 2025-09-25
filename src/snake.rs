@@ -2,7 +2,7 @@ use std::collections::LinkedList;
 use piston_window::{Context, G2d};
 use piston_window::types::Color;
 
-use draw::draw_block;
+use crate::draw::draw_block;
 
 const SNAKE_COLOR: Color = [0.00, 0.80, 0.00, 1.0]; // Green
 #[derive (Copy,Clone,PartialEq)]
@@ -38,7 +38,7 @@ pub struct Snake {
 
 impl Snake {
     pub fn new(x: i32, y: i32) ->Snake {
-        let mut body: LinkedList<Block> = Linkedlist::new();
+        let mut body: LinkedList<Block> = LinkedList::new();
         body.push_back(Block {
             x:x+2,
             y,
